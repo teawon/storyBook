@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], // 이걸 넣어야 React에서 작성한 스타일이 반영된다고 함
   theme: {
     extend: {},
+    fontFamily: {
+      body: ["Noto Sans KR"],
+    },
     fontSize: {
       // 자주 쓰이는 폰트를 정리하면 편함 (24px의 경우 bold가 자주들어간다면 한꺼번에 묶는 것)
       xs: [
