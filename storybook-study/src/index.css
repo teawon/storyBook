@@ -5,3 +5,9 @@
 body {
   font-family: "Noto Sans KR";
 }
+
+@layer components {
+  .subNode-absolute > p {
+    @apply absolute;
+  }
+}

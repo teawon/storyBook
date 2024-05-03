@@ -33,7 +33,7 @@ const DefaultTextField = ({
       : "border-primary";
 
   return (
-    <div>
+    <div className="subNode-absolute">
       <div
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}

@@ -2,34 +2,42 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Label from "./components/Label";
+import DefaultTextField from "./components/DefaultTextField";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [isError, setIsError] = useState(false);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className="text-3xl text-mono100 font-bold underline">
-        Hello world!
-      </h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Label htmlFor="email" children="이메일" />
+      <DefaultTextField
+        id="email"
+        value=""
+        placeholder="이메일을 입력해주세요."
+        iconPath="/vite.svg"
+        iconAlt="icon"
+        onChange={() => {}}
+        onIconClick={() => {}}
+        errorMessage="이메일을 입력해주세요."
+        isError={isError}
+      />
+
+      <div className="my-20" />
+      <Label htmlFor="username" children="닉네임" />
+      <DefaultTextField
+        id="username"
+        value=""
+        placeholder="이름을 입력해주세요."
+        iconPath="/vite.svg"
+        iconAlt="icon"
+        onChange={() => {}}
+        onIconClick={() => {}}
+        errorMessage="이메일을 입력해주세요."
+        isError={isError}
+      />
+
+      <button onClick={() => setIsError((prev) => !prev)}>에러 토글</button>
     </>
   );
 }
