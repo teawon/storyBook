@@ -7,7 +7,11 @@ body {
 }
 
 @layer components {
-  .subNode-absolute > p {
+  .text-field > p {
     @apply absolute;
+  }
+  /* NavbarComponent의 버튼요소에 margin을 주기위해 사용 */
+  .navigation-title-wrapper > button {
+    @apply mr-[7px];
   }
 }
