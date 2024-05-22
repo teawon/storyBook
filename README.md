@@ -117,3 +117,11 @@
 - 빌드가 수행되면 각 컴포넌트들의 변경사항, 컴포넌트를 볼 수 있음
 
 - 쉽게 배포할 수 있는 방법인듯하다
+
+### 4.2 CI/CD 연결
+
+- github Action을 사용해 처리하는 방법
+
+- 공식문서 따라하기 https://www.chromatic.com/docs/github-actions/
+
+  - CHROMATIC_PROJECT_TOKEN 시크릿키 github에서 관리하도록 설정
