@@ -125,3 +125,8 @@
 - 공식문서 따라하기 https://www.chromatic.com/docs/github-actions/
 
   - CHROMATIC_PROJECT_TOKEN 시크릿키 github에서 관리하도록 설정
+
+- ![image](https://github.com/teawon/storyBook/assets/78795820/2921f1ee-ccda-4799-8569-f7a037c07021)
+
+  - 배포된 사이트를 통해 쉽게 UI를 확인하고 리뷰할 수 있다
+  - 별도의 환경 구축 없이 UI를 확인할 수 있다는 부분이 이점인듯 (기존에는 직접 브랜치 옮기고 실행해야했음)
