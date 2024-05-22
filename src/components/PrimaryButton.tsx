@@ -29,7 +29,7 @@ const PrimaryButton = ({
   return (
     <button
       className={`
-        rounded-primary-button
+        rounded-button-default
         w-full 
         h-[59px] 
         ${disabledStyle}
