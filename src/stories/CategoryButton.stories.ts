@@ -38,8 +38,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: "button",
+    text: "리뷰테스트",
     iconAlt: "icon",
-    iconPath: "https://kr.object.ncloudstorage.com/icons/ic-category-dark.svg",
+    iconPath: "https://kr.object.ncloudstorage.com/icons/ic-category.svg",
   },
 };
