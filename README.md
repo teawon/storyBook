@@ -146,3 +146,14 @@
   - 버튼을 클릭하고, 텍스트를 입력하는 등의 상호작용
 
   - Jest를 사용한다.
+
+- 만약 유닛테스트에서 API테스트 할 필요가 없다면, Storybook의 테스트로 충분하다고 이야기
+
+  - Jest에서는 번거로운 설정이 필요하다
+
+  - 만약 cypress에서 이런 테스트를 진행하고 있다면, UI테스트는 Interaction으로 괜찮다.
+
+  - 단순히 CanvasElement만 가져옴
+
+- 결과물
+  - ![May-30-2024 00-12-07](https://github.com/teawon/storyBook/assets/78795820/4621547d-0c90-4714-bc09-33f39190d111)
