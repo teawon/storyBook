@@ -204,3 +204,8 @@
 7. 배포
 
 - `npm publish --publish`
+
+8. 사용
+
+- `패키지명/index.css`를 `main.tsx에 import
+- 이후 컴포넌트도 모두 `패키지명/컴포넌트` 형태로 가져와 사용하기
