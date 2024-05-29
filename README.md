@@ -173,3 +173,34 @@
 #### 4.5.3 여러 테스트
 
 - End-to-End testing, Unit Test모두 굳이 스토리북으로 할 필요는 없음
+
+### 5. npm 배포하기
+
+1. `package.json`의 이름 수정 (단 누군가 사용중이면 안됨)
+
+- private = "false" 하면 돈나감
+
+2. 여기서는 컴포넌트만 export해주면된다. (스토리북을 굳이 함께 보낼 필요가 없음)
+
+3. 한번에 사용하기 쉽게 index에서 묶어서 한번에 보냄
+
+4. main에 `src/components/index.tsx` 를 넣어 별다른 경로 없이 접근가능하도록 설정
+
+- files에도 컴포넌트 설정 + tailwind css 파일 넣어주기
+
+5. 그런데 tailwind의 경우 index.css를 import해서 사용해야했다. 이 부분은?
+
+- tailwind에서는 배포 명령어를 제공한다.
+
+- `npx tailwindcss -i ./src/index.css -o ./index.css --watch`
+
+- 우리가 사용했던 특정 className (border-primary)와 같은 부분에 대해 css파일을 빌드하며 만들어줌
+  - 의존성 문제를 해결해준다.
+
+6. 공용 스타일도 사용했기때문에 이부분도 보내야함
+
+- `src/mixins` files에 추가
+
+7. 배포
+
+- `npm publish --publish`
